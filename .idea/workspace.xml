@@ -31,15 +31,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/박원장Cloud/쿠버네티스/board/board/build.gradle",
+    "last_opened_file_path": "C:/박원장Cloud/쿠버네티스/board/build.gradle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "cd9f26677aa013475b338eb8671f03c4",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BoardApplication">
+    <configuration name="BoardApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="com.insight.board.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="board.BoardApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="board.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="board.BoardApplication" />
@@ -57,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711415660285</updated>
       <workItem from="1711415661481" duration="866000" />
+      <workItem from="1711418600131" duration="1507000" />
     </task>
     <servers />
   </component>
