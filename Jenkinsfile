@@ -4,8 +4,8 @@ pipeline {
             TIME_ZONE = 'Asia/Seoul'
             PROFILE = 'local'
             AWS_CREDENTIAL_NAME = 'aws-key'
-            DEPLOY_CREDENTIAL_NAME = 'deploy-key'
-            REGION="ap-northeast-2"
+            DEPLOY_CREDENTIAL_NAME = 'seonguk-ssh-key'
+            REGION="us-east-2"
             ECR_PATH = '211125372242.dkr.ecr.us-east-2.amazonaws.com'
             IMAGE_NAME = '211125372242.dkr.ecr.us-east-2.amazonaws.com/board'
             DEPLOY_Host="52.14.223.28"
