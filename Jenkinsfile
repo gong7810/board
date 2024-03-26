@@ -4,10 +4,10 @@ pipeline {
             TIME_ZONE = 'Asia/Seoul'
             PROFILE = 'local'
             AWS_CREDENTIAL_NAME = 'aws-key'
-            DEPLOY_CREDENTIAL_NAME = 'deploy-ssh-key'
+            DEPLOY_CREDENTIAL_NAME = 'seonguk-ssh-key'
             REGION="ap-northeast-2"
-            ECR_PATH = '590183823453.dkr.ecr.ap-northeast-2.amazonaws.com'
-            IMAGE_NAME = '590183823453.dkr.ecr.ap-northeast-2.amazonaws.com/board'
+            ECR_PATH = '211125372242.dkr.ecr.us-east-2.amazonaws.com'
+            IMAGE_NAME = '211125372242.dkr.ecr.us-east-2.amazonaws.com/board'
             DEPLOY_Host="52.14.223.28"
         }
     stages {
@@ -59,7 +59,7 @@ pipeline {
                 }
         stage('Deploy to AWS EC2 VM'){
              steps{
-                sshagent(credentials : ['deploy-ssh-key']) {
+                sshagent(credentials : ['seonguk-ssh-key']) {
                     sh "ssh -o StrictHostKeyChecking=no ubuntu@$DEPLOY_Host \
                      'aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin $ECR_PATH; \
                     docker run -d -p 80:8080 -t $IMAGE_NAME:${BUILD_NUMBER};'"

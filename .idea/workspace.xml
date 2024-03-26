@@ -30,6 +30,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/박원장Cloud/쿠버네티스/board/build.gradle",
     "node.js.detected.package.eslint": "true",
@@ -38,6 +39,13 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "spring.configuration.checksum": "cd9f26677aa013475b338eb8671f03c4",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.BoardApplication">
@@ -65,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711415660285</updated>
       <workItem from="1711415661481" duration="866000" />
-      <workItem from="1711418600131" duration="1507000" />
+      <workItem from="1711418600131" duration="2082000" />
     </task>
     <servers />
   </component>
