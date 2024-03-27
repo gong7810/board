@@ -48,16 +48,9 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.BoardApplication">
-    <configuration name="BoardApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="BoardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.insight.board.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="board.BoardApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="board.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="board.BoardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,7 +68,8 @@
       <workItem from="1711415661481" duration="866000" />
       <workItem from="1711418600131" duration="5507000" />
       <workItem from="1711429224292" duration="1642000" />
-      <workItem from="1711432467537" duration="840000" />
+      <workItem from="1711432467537" duration="1039000" />
+      <workItem from="1711505725176" duration="1334000" />
     </task>
     <servers />
   </component>

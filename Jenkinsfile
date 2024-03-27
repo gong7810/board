@@ -3,12 +3,12 @@ pipeline {
     environment {
             TIME_ZONE = 'Asia/Seoul'
             PROFILE = 'local'
-            AWS_CREDENTIAL_NAME = 'aws-key'
-            DEPLOY_CREDENTIAL_NAME = 'deploy-key'
-            REGION="us-east-2"
-            ECR_PATH = '211125372242.dkr.ecr.us-east-2.amazonaws.com'
+            AWS_CREDENTIAL_NAME = 'aws-key'     //aws-key id
+            DEPLOY_CREDENTIAL_NAME = 'deploy-key'   // ec2 연결하는 키
+            REGION="us-east-2"  // 현재 위치
+            ECR_PATH = '211125372242.dkr.ecr.us-east-2.amazonaws.com'   // ecr repository 푸시옵션
             IMAGE_NAME = '211125372242.dkr.ecr.us-east-2.amazonaws.com/board'
-            DEPLOY_Host="52.14.223.28"
+            DEPLOY_Host="3.134.95.73"  // ec2 인스턴스 ip4
         }
     stages {
         stage('Pull Codes from Github'){
@@ -59,7 +59,7 @@ pipeline {
                 }
         stage('Deploy to AWS EC2 VM'){
              steps{
-                sshagent(credentials : ['deploy-key']) {
+                sshagent(credentials : ['deploy-key']) {        // pem 키 id
                     sh "ssh -o StrictHostKeyChecking=no ubuntu@$DEPLOY_Host \
                      'aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin $ECR_PATH; \
                     docker run -d -p 80:8080 -t $IMAGE_NAME:${BUILD_NUMBER};'"
